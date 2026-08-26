@@ -1,0 +1,172 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "fixed-aaron-companion-en-us",
+    "translationKey": "aaron-companion",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/aaron-companion",
+    "alternates": {
+      "en-US": "/aaron-companion"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "fixed-multi-borough-chapters-en-us",
+    "translationKey": "multi-borough-chapters",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/chapters",
+    "alternates": {
+      "en-US": "/chapters"
+    }
+  },
+  {
+    "id": "fixed-early-access-faq-en-us",
+    "translationKey": "early-access-faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/early-access",
+    "alternates": {
+      "en-US": "/early-access"
+    }
+  },
+  {
+    "id": "fixed-esbat-moon-missions-en-us",
+    "translationKey": "esbat-moon-missions",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/esbat",
+    "alternates": {
+      "en-US": "/esbat"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "fixed-gablestone-investigation-en-us",
+    "translationKey": "gablestone-investigation",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/gablestone",
+    "alternates": {
+      "en-US": "/gablestone"
+    }
+  },
+  {
+    "id": "fixed-noa-brooklyn-en-us",
+    "translationKey": "noa-brooklyn",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/noa-brooklyn",
+    "alternates": {
+      "en-US": "/noa-brooklyn"
+    }
+  },
+  {
+    "id": "fixed-patrice-desilets-legacy-en-us",
+    "translationKey": "patrice-desilets-legacy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/patrice-desilets",
+    "alternates": {
+      "en-US": "/patrice-desilets"
+    }
+  },
+  {
+    "id": "fixed-press-coverage-en-us",
+    "translationKey": "press-coverage",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/press-coverage",
+    "alternates": {
+      "en-US": "/press-coverage"
+    }
+  },
+  {
+    "id": "fixed-prologue-demo-en-us",
+    "translationKey": "prologue-demo",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/prologue-demo",
+    "alternates": {
+      "en-US": "/prologue-demo"
+    }
+  },
+  {
+    "id": "fixed-release-platforms-en-us",
+    "translationKey": "release-platforms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release",
+    "alternates": {
+      "en-US": "/release"
+    }
+  },
+  {
+    "id": "fixed-story-setting-en-us",
+    "translationKey": "story-setting",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/story-setting",
+    "alternates": {
+      "en-US": "/story-setting"
+    }
+  },
+  {
+    "id": "fixed-system-requirements-en-us",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "fixed-the-originals-en-us",
+    "translationKey": "the-originals",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/the-originals",
+    "alternates": {
+      "en-US": "/the-originals"
+    }
+  },
+  {
+    "id": "fixed-witchcraft-spellcasting-en-us",
+    "translationKey": "witchcraft-spellcasting",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/witchcraft",
+    "alternates": {
+      "en-US": "/witchcraft"
+    }
+  }
+]

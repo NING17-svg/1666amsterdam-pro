@@ -58,10 +58,19 @@ export function getLanguageAlternates(
   );
 }
 
+/**
+ * Translation keys for template fixture pages that exist only to validate the
+ * template rendering rules. They are intentionally excluded from the V3 route
+ * manifest so the route contract validator compares against the Planning
+ * Contract only; `getAllPages()` continues to expose them for template tests.
+ */
+const FIXTURE_TRANSLATION_KEYS = new Set<string>(["wiki", "guides"]);
+
 export function getFinalRouteManifest(
   sourcePages: PageContent[] = pages,
 ): FinalRouteManifestEntry[] {
   return sourcePages
+    .filter((page) => !FIXTURE_TRANSLATION_KEYS.has(page.translationKey))
     .map((page) => ({
       id: page.id,
       translationKey: page.translationKey,

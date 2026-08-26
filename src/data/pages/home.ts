@@ -5,7 +5,7 @@ export const homePage: PageContent = {
   id: "home",
   translationKey: "home",
   locale: "en-US",
-  routeKind: "fixed",
+  routeKind: "home",
   slug: "",
   url: "/",
   pageType: "home",
