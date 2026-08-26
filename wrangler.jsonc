@@ -13,7 +13,7 @@
   },
   "vars": {
     "NEXT_PUBLIC_SITE_URL": "https://1666amsterdam.pro",
-    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "",
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "G-VC8SS49CL6",
     "NEXT_PUBLIC_BING_SITE_AUTH_CODE": ""
   }
 }
