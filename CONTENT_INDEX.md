@@ -25,6 +25,8 @@ The rows below are the primary-locale baseline for 1666: Amsterdam (1666amsterda
 | `/chapters` | `src/data/pages/fixed-pages.ts` (multiBoroughChaptersPage) | Guides | 1666 Amsterdam chapters | Multi-borough structure and EA roadmap | Early Access FAQ / Story | Guide | Prologue is chapter one; rest follow in EA window. |
 | `/patrice-desilets` | `src/data/pages/fixed-pages.ts` (patriceDesiletsLegacyPage) | Guides | 1666 Amsterdam Patrice Désilets | Creative director lineage at Panache Digital Games | Press coverage | Trust | New IP at Panache Digital Games; not AC sequel. |
 | `/press-coverage` | `src/data/pages/fixed-pages.ts` (pressCoveragePage) | Release | 1666 Amsterdam press coverage | IGN and Eurogamer previews, review status | Release / Patrice Désilets | Trust | Preview-led coverage at EA launch. |
+| `/troubleshooting` | `src/data/pages/fixed-pages.ts` (troubleshootingHubPage) | Guides | 1666 Amsterdam PC troubleshooting | Launch crashes, black screen, mid-game crashes, low FPS, Esbat boss-arena bug | System requirements / Prologue demo / Controls | Reference | Launch-window fixes from preview outlets and Steam discussions. |
+| `/controls` | `src/data/pages/fixed-pages.ts` (controlsReferencePage) | Guides | 1666 Amsterdam keyboard mouse gamepad controls | Bind movement, Gablestone, Witchcraft, perspective swap, pause | Witchcraft / Gablestone / Troubleshooting | Reference | Keyboard/mouse + Xbox gamepad equivalents for the EA build. |
 | `/wiki` | `src/data/pages/fixed-pages.ts` (wikiFixturePage) | Wiki | 1666 Amsterdam wiki | Verified facts and sources | Release / Story | Hub fixture | Template fixture for review-date rendering validation. |
 | `/about` | `src/data/pages/fixed-pages.ts` (aboutFixturePage) | Site | about 1666 Amsterdam Guide | Trust and editorial policy | Release | Trust fixture | Template fixture; unofficial editorial policy. |
 | `/faq` | `src/data/pages/fixed-pages.ts` (faqFixturePage) | FAQ | 1666 Amsterdam FAQ | Common launch and systems questions | Release / Story | Answer hub fixture | Template fixture; FAQ JSON-LD enabled. |
@@ -52,12 +54,14 @@ The rows below are the primary-locale baseline for 1666: Amsterdam (1666amsterda
 - System pages (`/the-originals`, `/witchcraft`, `/gablestone`, `/esbat`) cross-link each other in a 4-way loop.
 - `/press-coverage` links to `/release` and `/patrice-desilets`.
 - `/prologue-demo` and `/early-access` link to `/release`, `/story-setting`, and `/chapters`.
+- `/troubleshooting` cross-links to `/system-requirements`, `/prologue-demo`, `/esbat`, `/gablestone`, and `/controls`.
+- `/controls` cross-links to `/noa-brooklyn`, `/aaron-companion`, `/witchcraft`, `/gablestone`, `/esbat`, and `/troubleshooting`.
 
 ## Topic Clusters
 
 The 14 topic pages partition into four clusters:
 
-1. Launch & Platforms (`/release`, `/system-requirements`, `/prologue-demo`, `/early-access`, `/press-coverage`)
+1. Launch & Platforms (`/release`, `/system-requirements`, `/prologue-demo`, `/early-access`, `/press-coverage`, `/troubleshooting`, `/controls`)
 2. Story & Setting (`/story-setting`, `/noa-brooklyn`, `/aaron-companion`, `/chapters`)
 3. Enemies & Magic (`/the-originals`, `/witchcraft`, `/gablestone`, `/esbat`)
 4. Creator & Press (`/patrice-desilets`, `/press-coverage`)

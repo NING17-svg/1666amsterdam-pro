@@ -149,6 +149,18 @@ export const homePage: PageContent = {
             "Hardware status as of 2026-08-26; demo as practical benchmark.",
           href: "/system-requirements/",
         },
+        {
+          title: "PC troubleshooting",
+          summary:
+            "Launch crashes, black screens, mid-game crashes, low FPS, and the Esbat boss-arena workaround.",
+          href: "/troubleshooting/",
+        },
+        {
+          title: "Keyboard, mouse, and gamepad controls",
+          summary:
+            "Default bindings for movement, Gablestone, Witchcraft, the cat-form swap, and the pause flow.",
+          href: "/controls/",
+        },
       ],
     },
     {
@@ -185,6 +197,8 @@ export const homePage: PageContent = {
     "fixed-patrice-desilets-legacy-en-us",
     "fixed-press-coverage-en-us",
     "fixed-system-requirements-en-us",
+    "fixed-troubleshooting-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",

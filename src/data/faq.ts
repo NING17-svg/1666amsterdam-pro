@@ -759,4 +759,118 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "official",
   },
+
+  // troubleshooting
+  {
+    id: "tshoot-launch",
+    question: "How do I fix 1666 Amsterdam crashing on launch?",
+    answer:
+      "In Steam, right-click 1666 Amsterdam → Properties → Installed Files → Verify integrity of game files. Then run 1666Amsterdam.exe as administrator (Compatibility tab), force -dx11 in Steam Launch Options, repair Visual C++ x64 from Microsoft, and disable Steam Overlay, Discord Overlay, and GeForce Experience. Source: PixelNitro launch-crash guide.",
+    pageIds: ["fixed-troubleshooting-en-us"],
+    category: "platform",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "tshoot-black",
+    question: "How do I fix 1666 Amsterdam black screen on first boot?",
+    answer:
+      "Force -dx11 in Steam Launch Options, repair Visual C++ x64, then rename the %localappdata% Panache 1666 Amsterdam folder to Amsterdam_OLD so the engine writes fresh config. Disable Steam, Discord, and GeForce Experience overlays before the next launch. Source: Worldeka black-screen guide.",
+    pageIds: ["fixed-troubleshooting-en-us"],
+    category: "platform",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "tshoot-midgame",
+    question: "Why does 1666 Amsterdam crash when I switch between Noa and Aaron?",
+    answer:
+      "The Noa/Aaron perspective swap is the heaviest streaming event in the EA build and is sensitive to GPU drivers and overlays. Force DirectX 11 in Steam Launch Options, disable Steam/Discord/GeForce overlays, repair Visual C++ x64, and clear/rebuild the shader cache from NVIDIA or AMD software. Source: Worldeka mid-game crash guide.",
+    pageIds: ["fixed-troubleshooting-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "tshoot-fps",
+    question: "How do I fix low FPS and stuttering in 1666 Amsterdam?",
+    answer:
+      "Install on an NVMe SSD (not an HDD), set a 16384 MB initial / 32768 MB maximum pagefile on the same drive, clear the shader cache, cap to a stable framerate, disable every overlay, and lower ray tracing, shadows, and global illumination before dropping texture quality. Use DLSS/FSR Quality or Balanced. Source: Worldeka low-FPS guide, XModHub.",
+    pageIds: ["fixed-troubleshooting-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "tshoot-boss",
+    question: "What do I do when an Esbat boss arena exits me out of the encounter?",
+    answer:
+      "Reload the most recent checkpoint from the pause menu or restart that Esbat night from the Gablestone board. The Gablestone evidence trail stays intact and the Esbat trigger re-arms on the next moon-phase window. There is no confirmed hotfix from Panache yet; report the encounter with DxDiag and the Saved/Logs folder. Source: launch-window troubleshooting guides.",
+    pageIds: ["fixed-troubleshooting-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // controls
+  {
+    id: "ctrl-where",
+    question: "What are the default keyboard controls in 1666 Amsterdam?",
+    answer:
+      "WASD for movement, Shift for move faster, Space for jump / action, E for interact / track / gather / collect, right mouse button for concentrate, left mouse button for analyze, mouse wheel for camera lock, R for reveal/conceal Noa, Esc for pause, Q to resume/close, A / D for previous/next track. Source: MagicGameWorld controls guide.",
+    pageIds: ["fixed-controls-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ctrl-cat",
+    question: "How do I switch to Aaron the cat in 1666 Amsterdam?",
+    answer:
+      "The perspective swap between Noa Brooklyn and Aaron happens through the mission flow during the day-side Gablestone loop rather than as a manual toggle. When the borough scene hands control to Aaron, the camera and movement follow automatically. There is no published dedicated 'switch to cat' binding in the EA build. Source: MagicGameWorld controls guide.",
+    pageIds: ["fixed-controls-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ctrl-swap",
+    question: "What is the Xbox gamepad equivalent of the 1666 Amsterdam keyboard layout?",
+    answer:
+      "Left stick for movement, left stick click for move faster, X for interact / track / gather / collect, left trigger (LT) for concentrate, right trigger (RT) for analyze, right stick (RS) for camera lock, RB for reveal/conceal Noa, A to confirm, the Menu button for pause, B to resume/close, D-pad left/right for previous/next track. Source: MagicGameWorld controls guide.",
+    pageIds: ["fixed-controls-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ctrl-spell",
+    question: "Which button casts spells in 1666 Amsterdam?",
+    answer:
+      "The right mouse button (LT on Xbox gamepad) concentrates and the left mouse button (RT) analyzes the marked face during Esbat combat against the Originals. R (RB) reveals or conceals Noa on the spot. Source: MagicGameWorld controls guide.",
+    pageIds: ["fixed-controls-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ctrl-pause",
+    question: "How do I pause 1666 Amsterdam?",
+    answer:
+      "Press Esc on keyboard (or the Menu button on Xbox gamepad) to pause. Q (or B on gamepad) resumes/closes the menu, and Space (or A) confirms/continues dialog or selection prompts. Source: MagicGameWorld controls guide.",
+    pageIds: ["fixed-controls-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ctrl-rebind",
+    question: "Can I rebind 1666 Amsterdam controls?",
+    answer:
+      "Not announced as of 2026-08-27. The launch-window controls guides publish only the default keyboard/mouse and Xbox gamepad layouts; an in-game rebind screen is not yet documented. Treat any third-party claim of a rebindable swap binding as speculative until Panache Digital Games confirms it on the Steam store page. Source: MagicGameWorld controls guide.",
+    pageIds: ["fixed-controls-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
 ];

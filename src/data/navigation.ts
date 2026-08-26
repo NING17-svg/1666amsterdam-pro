@@ -15,6 +15,8 @@ export const primaryNavigation: LocalizedNavigationItem[] = [
   { href: "/witchcraft/", labels: { "en-US": "Witchcraft" } },
   { href: "/gablestone/", labels: { "en-US": "Gablestone" } },
   { href: "/esbat/", labels: { "en-US": "Esbat" } },
+  { href: "/controls/", labels: { "en-US": "Controls" } },
+  { href: "/troubleshooting/", labels: { "en-US": "PC troubleshooting" } },
   { href: "/patrice-desilets/", labels: { "en-US": "Patrice Désilets" } },
   { href: "/press-coverage/", labels: { "en-US": "Press coverage" } },
   { href: "/system-requirements/", labels: { "en-US": "System requirements" } },

@@ -35,3 +35,9 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## 2026-08-26 — Adsterra six-unit integration
 - Replaced empty placeholders in `src/data/ads.ts` with the fixed six Adsterra units (Native Banner, 728x90, 468x60, 320x50, 160x600, Smartlink) for `1666amsterdam.pro`; values written via the adsterra-integrator private tool, no new ad components or layout changes.
+
+## 2026-08-27 — PC troubleshooting and controls reference pages
+- Added `/troubleshooting` hub (launch crash + black screen fixes, mid-game crashes during the Noa/Aaron perspective swap, low FPS + stutter + shader cache, Esbat boss-arena workaround, reporting reproducible crashes to Panache) and `/controls` reference (keyboard/mouse + Xbox gamepad bindings for movement, Gablestone investigate, Witchcraft spellcast, the Noa reveal/conceal, the perspective swap, and the pause flow).
+- Files changed: `src/data/pages/fixed-pages.ts`, `src/data/navigation.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: two new fixed pages (`/troubleshooting`, `/controls`); cross-links added on `/`, `/system-requirements`, `/esbat`, `/gablestone`, `/witchcraft`, `/noa-brooklyn`, `/aaron-companion`, `/early-access`. No existing URL was removed or redirected.
+- 11 new FAQ entries added (`tshoot-*` x5 and `ctrl-*` x6), all sourced to the PixelNitro, Worldeka, VGTimes, XModHub, and MagicGameWorld launch-window guides.

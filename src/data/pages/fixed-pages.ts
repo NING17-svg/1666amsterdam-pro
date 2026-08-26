@@ -154,7 +154,10 @@ export const systemRequirementsPage: PageContent = {
     },
   ],
   faqIds: ["sysreq-min", "sysreq-rec", "sysreq-deck", "sysreq-storage"],
-  relatedPageIds: ["fixed-release-platforms-en-us"],
+  relatedPageIds: [
+    "fixed-release-platforms-en-us",
+    "fixed-troubleshooting-en-us",
+  ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
   lastReviewed: "2026-08-26",
@@ -396,6 +399,8 @@ export const earlyAccessFaqPage: PageContent = {
     "fixed-release-platforms-en-us",
     "fixed-prologue-demo-en-us",
     "fixed-multi-borough-chapters-en-us",
+    "fixed-troubleshooting-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -566,6 +571,7 @@ export const noaBrooklynPage: PageContent = {
   relatedPageIds: [
     "fixed-aaron-companion-en-us",
     "fixed-story-setting-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -642,6 +648,7 @@ export const aaronCompanionPage: PageContent = {
   relatedPageIds: [
     "fixed-noa-brooklyn-en-us",
     "fixed-story-setting-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -812,6 +819,7 @@ export const witchcraftSpellcastingPage: PageContent = {
   relatedPageIds: [
     "fixed-esbat-moon-missions-en-us",
     "fixed-the-originals-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -888,6 +896,7 @@ export const gablestoneInvestigationPage: PageContent = {
   relatedPageIds: [
     "fixed-esbat-moon-missions-en-us",
     "fixed-the-originals-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -966,6 +975,8 @@ export const esbatMoonMissionsPage: PageContent = {
     "fixed-the-originals-en-us",
     "fixed-gablestone-investigation-en-us",
     "fixed-witchcraft-spellcasting-en-us",
+    "fixed-troubleshooting-en-us",
+    "fixed-controls-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -1452,6 +1463,252 @@ export const guidesFixturePage: PageContent = {
   lastReviewed: "2026-08-26",
 };
 
+export const troubleshootingHubPage: PageContent = {
+  id: "fixed-troubleshooting-en-us",
+  translationKey: "troubleshooting",
+  locale: "en-US",
+  routeKind: "fixed",
+  slug: "troubleshooting",
+  url: "/troubleshooting",
+  pageType: "guides",
+  presentation: { shell: "content", variant: "reading-right-rail" },
+  h1: "1666 Amsterdam PC Troubleshooting: Launch Crashes, Black Screens, and Low FPS",
+  seoTitle: "1666 Amsterdam PC Troubleshooting: Launch Crashes, Black Screens, and Low FPS",
+  metaDescription:
+    "1666 Amsterdam PC troubleshooting for Early Access: launch crash and black screen fixes, mid-game crashes during the Noa/Aaron perspective swap, low FPS and stuttering, broken Esbat boss arena workaround, and how to report reproducible crashes to Panache.",
+  summary:
+    "1666 Amsterdam is in Steam Early Access as of 2026-08-25 and is showing the typical launch-week symptoms reported across preview outlets and Steam discussion threads: launch crashes, black screens on first boot, mid-game crashes around the Noa/Aaron perspective swap, low FPS and shader compile stutter on mid-range GPUs, and a small number of Esbat boss-arena exits that drop the player out of the encounter. This page gathers the verified, repeatable fixes from launch-window troubleshooting guides so you can get the EA build stable enough to clear the Prologue and first borough without buying new hardware.",
+  hero: {
+    eyebrow: "PC Troubleshooting",
+    subtitle:
+      "Launch crashes, black screens, mid-game crashes during the Noa/Aaron perspective swap, low FPS and stuttering, and a workaround for broken Esbat boss arenas.",
+    ctas: [
+      { label: "PC system requirements", href: "/system-requirements/" },
+      { label: "Prologue demo", href: "/prologue-demo/" },
+      { label: "Keyboard and gamepad controls", href: "/controls/" },
+    ],
+  },
+  quickAnswer:
+    "1666 Amsterdam on PC is showing launch-week issues: launch crashes and black screens on first boot, mid-game crashes around the Noa/Aaron perspective swap, low FPS and shader stutter on mid-range hardware, and a small number of Esbat boss-arena exits. The fastest path to a stable session is, in order: verify Steam files, run the .exe as administrator, force DirectX 11 via Steam Launch Options, repair Visual C++ x64, disable Steam/Discord/GeForce Experience overlays, install on an NVMe SSD with a 16-32 GB pagefile on the same drive, clear the shader cache, lower texture quality, and reload the most recent checkpoint if an Esbat boss arena exits you out of the encounter. Reproducible crashes should be reported to Panache Digital Games with your DxDiag, Steam log, and the time of the crash.",
+  keyFacts: [
+    { label: "Platform", value: "Windows PC via Steam (AppID 3949550)" },
+    { label: "EA launch", value: "2026-08-25" },
+    { label: "First boot symptoms", value: "Launch crash, black screen, desktop crash" },
+    { label: "Mid-game symptom", value: "Crash during Noa/Aaron perspective swap" },
+    { label: "Performance symptom", value: "Low FPS, shader compile stutter" },
+    { label: "Encounter symptom", value: "Esbat boss arena exit bug" },
+  ],
+  modules: [
+    {
+      id: "tshoot-quick-answer",
+      type: "prose",
+      heading: "Quick Answer",
+      body: "1666 Amsterdam on PC is showing launch-week issues: launch crashes and black screens on first boot, mid-game crashes around the Noa/Aaron perspective swap, low FPS and shader stutter on mid-range hardware, and a small number of Esbat boss-arena exits. The fastest path to a stable session is, in order: verify Steam files, run the .exe as administrator, force DirectX 11 via Steam Launch Options, repair Visual C++ x64, disable Steam/Discord/GeForce Experience overlays, install on an NVMe SSD with a 16-32 GB pagefile on the same drive, clear the shader cache, lower texture quality, and reload the most recent checkpoint if an Esbat boss arena exits you out of the encounter. Reproducible crashes should be reported to Panache Digital Games with your DxDiag, Steam log, and the time of the crash.",
+    },
+    {
+      id: "tshoot-launch",
+      type: "steps",
+      heading: "Launch crash and black screen on first boot",
+      items: [
+        {
+          title: "Verify integrity of game files",
+          body: "Open Steam → Library → right-click 1666 Amsterdam → Properties → Installed Files → Verify integrity of game files. A clean verify resolves most launch crashes that come from a corrupt install or a partial download.",
+        },
+        {
+          title: "Run 1666Amsterdam.exe as administrator",
+          body: "Right-click the .exe in the install folder → Properties → Compatibility → enable Run this program as an administrator. Also tick Disable full-screen optimizations. The EA build writes engine settings under %localappdata% and needs full write permission to do so without a permission-denied crash.",
+        },
+        {
+          title: "Force DirectX 11 in Steam Launch Options",
+          body: "Properties → General → Launch Options, type -dx11 and press OK. If the EA build defaults to DirectX 12 on a driver stack that is not yet EA-stable, the -dx11 flag is the single most reliable way to get past a black screen on first boot. Only use it as a troubleshooting step; flip back to DX12 once Panache publishes a stable driver profile.",
+        },
+        {
+          title: "Repair Visual C++ x64 (and x86 if available)",
+          body: "Download the current Visual C++ Redistributable from Microsoft, choose Repair if it is already installed, then reboot. A redownload of the EA build plus a clean repair is the path the preview outlets converged on for first-boot EXE-then-disappears crashes.",
+        },
+        {
+          title: "Reset local config and whitelist the install folder",
+          body: "Press Win+R, type %localappdata%, and rename the Panache 1666 Amsterdam folder to Amsterdam_OLD rather than deleting it. Then add the EA install folder to your AV exclusions so a legitimate EXE is not quarantined by Controlled Folder Access.",
+        },
+      ],
+    },
+    {
+      id: "tshoot-midgame",
+      type: "prose",
+      heading: "Mid-game crash during the Noa/Aaron perspective swap",
+      body: "The mid-game crash reported across Steam discussion threads tends to land right as the player switches between Noa Brooklyn and Aaron during the day-side Gablestone loop, which is the heaviest streaming event in the EA build because it forces both character shaders and the cat-vision post-process to reload simultaneously. Preview outlet and community guides converge on three fixes for this specific failure: force DirectX 11 in Steam Launch Options (the same -dx11 flag used for first-boot black screens), disable every overlay that can hook the swap chain — Steam Overlay, Discord Overlay, and GeForce Experience in-game overlay, plus MSI Afterburner / RivaTuner Statistics Server — and repair the Visual C++ x64 runtime if you have not already done that as part of the launch-crash pass.\n\nBecause the swap is GPU-driver sensitive, the third leg of the fix is to clear and rebuild the shader cache after disabling overlays: open the NVIDIA Control Panel or AMD Software Adrenalin, raise shader cache size (Nvidia) or reset the cache (AMD), and let the next launch recompile. The first session after a cache reset will feel slightly choppy as shaders rebuild; that is normal and should fade once the cache is warm. Avoid reinstalling Windows or randomly deleting config folders — the perspective-swap crash is a known early-EA behavior and is solvable with the steps above.",
+      links: [
+        {
+          label: "Noa Brooklyn",
+          href: "/noa-brooklyn/",
+          description: "The day-side protagonist whose swap to Aaron is the trigger for the crash.",
+        },
+        {
+          label: "Aaron the cat companion",
+          href: "/aaron-companion/",
+          description: "The cat-vision body that swaps in during the day-side loop.",
+        },
+      ],
+    },
+    {
+      id: "tshoot-fps",
+      type: "steps",
+      heading: "Low FPS, stuttering, and shader compile hitching",
+      items: [
+        {
+          title: "Install on an NVMe SSD, not an HDD",
+          body: "1666 Amsterdam streams large amounts of city, character, and lighting data while you move through the dual day/night Amsterdam. HDD installs surface asset-streaming bottlenecks as visible stutter; an internal NVMe SSD is the working floor for stable framerates on the EA build.",
+        },
+        {
+          title: "Set a 16-32 GB pagefile on the same SSD",
+          body: "Settings → System → About → Advanced system settings → Performance → Advanced → Virtual memory. Set Custom size: Initial 16384 MB, Maximum 32768 MB, on the same physical SSD as the EA install. The EA build assumes a working paging pool for shader and streaming work; relying on RAM alone causes stutter at high texture quality on 16 GB systems.",
+        },
+        {
+          title: "Clear and rebuild the shader cache",
+          body: "Open NVIDIA Control Panel → Manage 3D Settings → Shader Cache Size and raise it to 10 GB or Unlimited, then clear the cache. On AMD, reset the shader cache through AMD Software: Adrenalin. The first launch after a cache reset will rebuild shaders and feel imperfect; that is normal.",
+        },
+        {
+          title: "Lower texture quality before other knobs",
+          body: "Volumetric lighting on Medium, shadow quality on Medium or High (avoid Ultra), DLSS/FSR set to Quality or Balanced, motion blur and depth of field off, ray tracing off or medium. Lower ray tracing, shadows, and global illumination before dropping textures — textures are usually the largest VRAM consumer but a high-texture preset still works on 8 GB GPUs depending on resolution.",
+        },
+        {
+          title: "Cap to a stable target and disable overlays",
+          body: "Cap to 60 FPS on a 60 Hz panel or 60-90 FPS on a 120 Hz panel. Disable Steam Overlay, Discord Overlay, NVIDIA/AMD recording, Xbox Game Bar, and any background capture tools — overlay hook conflicts are the most common source of frame-pacing bugs that masquerade as GPU stutter.",
+        },
+      ],
+    },
+    {
+      id: "tshoot-esbat",
+      type: "callout",
+      tone: "caution",
+      title: "Workaround for broken Esbat boss arenas",
+      body: "A small number of Esbat boss-arena encounters in the EA build have been reported to exit the player out of the encounter window — the boss arena loads, the moon-phase trigger fires, and the player is bounced back to the borough without the boss HP bar appearing. There is no confirmed hotfix from Panache Digital Games yet, so the working workaround is to reload the most recent checkpoint from the pause menu (Esc) or restart that Esbat night from the Gablestone board. The encounter itself is not lost; the Gablestone evidence trail stays intact and the Esbat trigger re-arms on the next moon-phase window.",
+    },
+    {
+      id: "tshoot-report",
+      type: "prose",
+      heading: "How to report reproducible crashes to Panache",
+      body: "Reproducible crashes should be reported to Panache Digital Games through the Steam Discussions board and the in-game crash reporter if one is bundled with the EA build. To make a report actionable, attach the time of the crash, the last action you took (which system you were on — Gablestone, Esbat, Witchcraft, Aaron perspective swap — and which borough), your DxDiag export, and the contents of %localappdata%/Panache/1666Amsterdam/Saved/Logs. Do not delete the Saved/Logs folder; Panache reads it to triage driver and shader compile failures. Do not edit the Windows registry, do not delete random system folders, and do not broadly disable your AV — whitelist the EA install folder instead. Treat community fixes that require disabling Windows services, modifying driver signing, or replacing system DLLs as speculative until Panache confirms them on the Steam News channel.",
+    },
+    {
+      id: "tshoot-sources",
+      type: "prose",
+      heading: "Sources",
+      body: "- [PixelNitro: 1666 Amsterdam crashing on launch, black screen, and desktop crashes on PC Windows 10/11](https://pixelnitro.com/how-to-fix-1666-amsterdam-crashing-on-launch-black-screen-and-desktop-crashes-on-pc-windows-10-11) - `community/guide` - checked `2026-08-27` - Verify-files, run-as-administrator, DirectX 11 launch option, Visual C++ repair, GPU driver clean install, and the launch-crash checklist for the 1666 Amsterdam EA build.\n- [Worldeka: 1666 Amsterdam black screen on launch and crashes — complete PC troubleshooting guide](https://worldeka.com/how-to-fix-1666-amsterdam-black-screen-on-launch-and-crashes-complete-pc-troubleshooting-guide) - `community/guide` - checked `2026-08-27` - Mid-game crash during the Noa/Aaron perspective swap, virtual memory 16384 / 32768 MB, texture pool reduction, overlay disable, windowed mode in GameUserSettings.ini, and engine-side streaming tweaks for the 1666 Amsterdam EA build.\n- [Worldeka: 1666 Amsterdam low FPS, stuttering, and performance issues on PC](https://worldeka.com/how-to-fix-1666-amsterdam-low-fps-stuttering-and-performance-issues-on-pc) - `community/guide` - checked `2026-08-27` - NVMe SSD install, shader cache reset, DirectX 11 launch option, frame-pacing cap, ray tracing off/medium, DLSS/FSR quality/balanced, motion blur off, and recommended 1666 Amsterdam in-game preset for the EA build.\n- [VGTimes: 1666 Amsterdam Engine.ini optimizations](https://vgtimes.com/games/1666-amsterdam/files/95142-paramtres-ultimes-du-moteur.html) - `community/guide` - checked `2026-08-27` - Engine.ini location under %localappdata%/Amsterdam/Saved/Config/Windows, VRR and non-VRR variants, and the optimization scope (CPU/GPU/RAM/SSD streaming tweaks) for 1666 Amsterdam EA.\n- [XModHub: 1666 Amsterdam fix — crashing, black screen, low FPS](https://www.xmodhub.com/info/guides/1666-amsterdam-fix-crashing-black-screen-low-fps/) - `community/guide` - checked `2026-08-27` - Quick-fix summary (verify, drivers, -dx11, run as admin, overlays), mid-game character-swap virtual memory guidance, and Engine.ini streaming flags for 1666 Amsterdam.",
+    },
+  ],
+  faqIds: ["tshoot-launch", "tshoot-black", "tshoot-midgame", "tshoot-fps", "tshoot-boss"],
+  relatedPageIds: [
+    "fixed-system-requirements-en-us",
+    "fixed-prologue-demo-en-us",
+    "fixed-esbat-moon-missions-en-us",
+    "fixed-gablestone-investigation-en-us",
+    "fixed-controls-en-us",
+  ],
+  schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
+  sourceStatus: "official",
+  lastReviewed: "2026-08-27",
+};
+
+export const controlsReferencePage: PageContent = {
+  id: "fixed-controls-en-us",
+  translationKey: "controls",
+  locale: "en-US",
+  routeKind: "fixed",
+  slug: "controls",
+  url: "/controls",
+  pageType: "guides",
+  presentation: { shell: "content", variant: "reading-right-rail" },
+  h1: "1666 Amsterdam Keyboard, Mouse, and Xbox Gamepad Controls",
+  seoTitle: "1666 Amsterdam Keyboard, Mouse, and Xbox Gamepad Controls",
+  metaDescription:
+    "1666 Amsterdam controls reference: keyboard and mouse bindings for movement, Gablestone investigate, Witchcraft spellcast, the Noa reveal/conceal, Aaron perspective swap, and menu flow, plus the Xbox gamepad equivalent.",
+  summary:
+    "1666 Amsterdam's default control layout uses a familiar WASD setup for movement, with the cat-vision perspective switch and the day-side Gablestone investigation verb both relying on E (RMB/RT/LT for spellcast verbs), which is non-obvious without a reference. This page collects the keyboard/mouse bindings and the Xbox gamepad equivalent from launch-window controls guides, including the dual-protagonist perspective swap between Noa Brooklyn and Aaron, the spellcast and concentrate verbs, and the menu flow.",
+  hero: {
+    eyebrow: "Controls Reference",
+    subtitle:
+      "Keyboard, mouse, and Xbox gamepad bindings for movement, the Gablestone investigate verb, Witchcraft spellcast, the Noa reveal/conceal, and the perspective swap between Noa and Aaron.",
+    ctas: [
+      { label: "Prologue demo", href: "/prologue-demo/" },
+      { label: "Witchcraft", href: "/witchcraft/" },
+      { label: "PC troubleshooting", href: "/troubleshooting/" },
+    ],
+  },
+  quickAnswer:
+    "1666 Amsterdam's default keyboard and mouse layout is a familiar WASD setup (W forward, S back, A left, D right) with Shift for move faster and Space for jump / action, E for general interaction plus track/untrack and gather/collect, the right mouse button (RMB) for concentrate, the left mouse button (LMB) for analyze, the mouse wheel button for camera lock, R for reveal/conceal Noa, Esc for pause, and Q to resume/close menus. The Xbox gamepad equivalent puts movement on the left stick, shift-sprint on LS, X for interaction / track / gather / collect, the right trigger (RT) for analyze, the left trigger (LT) for concentrate, D-pad left/right for previous/next, RB for reveal/conceal Noa, the Menu button for pause, B to resume/close, and A to confirm. The perspective swap between Noa Brooklyn and Aaron happens through the mission flow rather than as a manual toggle.",
+  keyFacts: [
+    { label: "Movement", value: "WASD (keyboard) / Left stick (gamepad)" },
+    { label: "Sprint", value: "Shift (keyboard) / Left stick click (gamepad)" },
+    { label: "Interact / Track / Gather", value: "E (keyboard) / X (gamepad)" },
+    { label: "Concentrate", value: "Right mouse button / Left trigger" },
+    { label: "Analyze", value: "Left mouse button / Right trigger" },
+    { label: "Reveal/Conceal Noa", value: "R (keyboard) / RB (gamepad)" },
+    { label: "Pause / Resume", value: "Esc / Q (keyboard), Menu / B (gamepad)" },
+    { label: "Perspective swap", value: "Mission flow (Noa ↔ Aaron cat-vision)" },
+  ],
+  modules: [
+    {
+      id: "ctrl-quick-answer",
+      type: "prose",
+      heading: "Quick Answer",
+      body: "1666 Amsterdam's default keyboard and mouse layout is a familiar WASD setup (W forward, S back, A left, D right) with Shift for move faster and Space for jump / action, E for general interaction plus track/untrack and gather/collect, the right mouse button (RMB) for concentrate, the left mouse button (LMB) for analyze, the mouse wheel button for camera lock, R for reveal/conceal Noa, Esc for pause, and Q to resume/close menus. The Xbox gamepad equivalent puts movement on the left stick, shift-sprint on LS, X for interaction / track / gather / collect, the right trigger (RT) for analyze, the left trigger (LT) for concentrate, D-pad left/right for previous/next, RB for reveal/conceal Noa, the Menu button for pause, B to resume/close, and A to confirm. The perspective swap between Noa Brooklyn and Aaron happens through the mission flow rather than as a manual toggle.",
+    },
+    {
+      id: "ctrl-overview",
+      type: "prose",
+      heading: "How the 1666 Amsterdam control layout is organized",
+      body: "1666 Amsterdam runs a third-person action-adventure control layout with two interlocking verbs that are easy to miss until you are inside the day/night loop. The first is the day-side Gablestone investigate verb that drives borough exploration and the Aaron cat-vision swap; on keyboard, both the general 'interact with the weird thing' prompt and the track/untrack and gather/collect actions sit on the E key, so E ends up being the single most-pressed button during exploration. The second is the spellcast / concentrate verb pair that is used during Esbat moon-night combat against the Originals, where the right mouse button concentrates and the left mouse button analyzes the marked face — both of which are bound to the gamepad's left and right triggers.\n\nThe reveal/conceal verb for Noa is its own binding because it sits outside the standard interact loop: pressing R on keyboard (or RB on gamepad) reveals or conceals Noa on the spot, and that one is worth remembering early because it is the kind of binding players tend to search for within the first Esbat. The pause/resume flow uses Esc to pause, Space or A to confirm/continue, and Q or B to resume/close — the same menu flow that any player who has used a third-person adventure will recognize, just spelled out for the dual-protagonist layout.",
+    },
+    {
+      id: "ctrl-kbm",
+      type: "comparison",
+      heading: "Keyboard and mouse bindings vs Xbox gamepad bindings",
+      options: [
+        {
+          name: "Keyboard and mouse",
+          summary:
+            "Movement: WASD + Shift sprint. Interact, track/untrack, and gather/collect: E. Concentrate: right mouse button. Analyze: left mouse button. Camera lock: mouse wheel button. Reveal/conceal Noa: R. Confirm/continue: Space. Pause: Esc. Resume/close: Q. Previous/Next track: A / D.",
+          bestFor: "PC players using the default layout with mouse aim.",
+          badge: "Default PC",
+        },
+        {
+          name: "Xbox gamepad",
+          summary:
+            "Movement: left stick. Sprint: left stick click. Interact, track/untrack, and gather/collect: X. Concentrate: left trigger (LT). Analyze: right trigger (RT). Camera lock: right stick (RS). Reveal/conceal Noa: RB. Confirm/continue: A. Pause: Menu button. Resume/close: B. Previous/Next track: D-pad left / right.",
+          bestFor: "Console players and anyone using a wireless Xbox controller.",
+          badge: "Default gamepad",
+        },
+      ],
+    },
+    {
+      id: "ctrl-cat",
+      type: "callout",
+      tone: "tip",
+      title: "Noa Brooklyn ↔ Aaron perspective swap",
+      body: "The dual-protagonist perspective switch between Noa Brooklyn and Aaron is built into the mission flow rather than being a separate mode you toggle manually — when the borough scene hands control to Aaron's cat body for a scouting or Gablestone step, the camera and movement follow the new character without a button press. On gamepad, X is the unified interact / track / gather / collect button, which is why cat-form scouting still feels natural once the swap has happened. There is no in-game rebindable 'switch to Aaron' key published in the EA build; treat any third-party claims of a dedicated swap binding as speculative.",
+    },
+    {
+      id: "ctrl-sources",
+      type: "prose",
+      heading: "Sources",
+      body: "- [MagicGameWorld: 1666 Amsterdam controls — keyboard and Xbox gamepad](https://www.magicgameworld.com/1666-amsterdam-controls-guide-keyboard-and-xbox-gamepad/) - `community/guide` - checked `2026-08-27` - Keyboard and mouse bindings (WASD, Shift sprint, Space jump/action, E interact/track/gather, RMB concentrate, LMB analyze, mouse-wheel camera lock, R reveal/conceal Noa, Esc pause, Q resume/close, A / D previous/next) and the matching Xbox gamepad bindings (LS move, LS click sprint, X interact/track/gather, LT concentrate, RT analyze, RS camera lock, RB reveal/conceal Noa, A confirm, Menu pause, B resume/close, D-pad previous/next) for the 1666 Amsterdam EA build.\n- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-08-27` - Confirms the EA build's PC platform target (Windows via Steam) and the dual day/night 1666 Amsterdam that the control layout has to support (Noa Brooklyn day-side investigation plus Aaron cat-vision and Esbat combat).",
+    },
+  ],
+  faqIds: ["ctrl-where", "ctrl-cat", "ctrl-swap", "ctrl-spell", "ctrl-pause", "ctrl-rebind"],
+  relatedPageIds: [
+    "fixed-noa-brooklyn-en-us",
+    "fixed-aaron-companion-en-us",
+    "fixed-witchcraft-spellcasting-en-us",
+    "fixed-gablestone-investigation-en-us",
+    "fixed-esbat-moon-missions-en-us",
+    "fixed-troubleshooting-en-us",
+  ],
+  schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
+  sourceStatus: "official",
+  lastReviewed: "2026-08-27",
+};
+
 export const allFixedPages: PageContent[] = [
   releasePlatformsPage,
   systemRequirementsPage,
@@ -1467,6 +1724,8 @@ export const allFixedPages: PageContent[] = [
   multiBoroughChaptersPage,
   patriceDesiletsLegacyPage,
   pressCoveragePage,
+  troubleshootingHubPage,
+  controlsReferencePage,
   wikiFixturePage,
   aboutFixturePage,
   faqFixturePage,
