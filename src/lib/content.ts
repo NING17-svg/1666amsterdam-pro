@@ -30,7 +30,7 @@ export function getAllPages(): PageContent[] {
 }
 
 export function getIndexablePages(): PageContent[] {
-  return pages;
+  return pages.filter((page) => !FIXTURE_TRANSLATION_KEYS.has(page.translationKey));
 }
 
 export function getPageByUrl(url: string): PageContent | undefined {

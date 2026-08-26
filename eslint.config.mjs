@@ -15,6 +15,7 @@ const eslintConfig = [
       ".next/**",
       ".open-next/**",
       ".wrangler/**",
+      ".wrangler-dist/**",
       "dist/**",
       "node_modules/**",
       "out/**",

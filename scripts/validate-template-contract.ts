@@ -538,6 +538,7 @@ for (const locale of site.locales) {
 const germanSearchFixture = {
   ...getAllPages().find((page) => page.id === "guides")!,
   id: "fixture-guides-de",
+  translationKey: "fixture-guides-de",
   locale: "de-DE",
   slug: "de/guides",
   url: "/de/guides",
