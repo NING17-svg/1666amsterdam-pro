@@ -6,43 +6,63 @@ Use this index to find the current role of each URL before editing. Update it wh
 
 ## Page Inventory
 
-The rows below are the primary-locale baseline. Localized versions keep the same
-`translationKey`, use their configured locale prefix, and must appear in canonical,
-hreflang, sitemap, and route-manifest validation.
+The rows below are the primary-locale baseline for 1666: Amsterdam (1666amsterdam.pro). The site launches in `en-US` only. All pages live in `src/data/pages/home.ts` (home) and `src/data/pages/fixed-pages.ts` (all 18 non-home pages). Localized versions keep the same `translationKey`, use the locale prefix configured in `src/data/site.ts`, and must appear in canonical, hreflang, sitemap, and route-manifest validation when added.
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Landing | Template Game guide | Find the best entry point | Open Wiki / Browse Guides | Hub | Replace with the configured game's main hub intent. |
-| `/wiki` | `src/data/pages/wiki-pages.ts` | Guide | Template Game wiki | Understand confirmed facts | Guides / FAQ | Hub | Keep official fact base and source context here. |
-| `/guides` | `src/data/pages/guide-pages.ts` | Guide | Template Game guides | Find guide topics before launch | Wiki / Release Info | Hub | Do not invent walkthroughs before reliable details exist. |
-| `/release-date` | `src/data/pages/release-pages.ts` | Guide | Template Game release date | Check release timing and platforms | FAQ / Wiki | Supporting hub | Must stay tied to official or store sources. |
-| `/faq` | `src/data/pages/site-pages.ts` | Guide | Template Game FAQ | Get short answers | Release Info / Contact | Answer hub | FAQ schema enabled. |
-| `/about` | `src/data/pages/site-pages.ts` | Utility | about Template Game Guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
-| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
-| `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
-| `/terms` | `src/data/pages/site-pages.ts` | Legal | terms of use | Site use expectations | Privacy Policy | Trust | Keep unofficial disclaimer clear. |
+| `/` | `src/data/pages/home.ts` | Landing | 1666: Amsterdam | Find EA launch status, Prologue demo, and systems | Prologue demo / Release | Hub | Split-panel variant; EA launch hub for 2026-08-25 Steam release. |
+| `/release` | `src/data/pages/fixed-pages.ts` (releasePlatformsPage) | Release | 1666 Amsterdam release date | Check EA launch date and platforms | Prologue demo / Early Access FAQ | Launch hub | Steam AppID 3949550, EA launch 2026-08-25, PC-only as of 2026-08-26. |
+| `/system-requirements` | `src/data/pages/fixed-pages.ts` (systemRequirementsPage) | Wiki | 1666 Amsterdam system requirements | Check PC specs | Release & Platforms | Reference | No published min/rec; Prologue demo as benchmark. |
+| `/prologue-demo` | `src/data/pages/fixed-pages.ts` (prologueDemoPage) | Guides | 1666 Amsterdam Prologue demo | How to play the free Steam demo | Release / Early Access FAQ | Guide | Demo entry under Steam AppID 3949550. |
+| `/early-access` | `src/data/pages/fixed-pages.ts` (earlyAccessFaqPage) | Guides | 1666 Amsterdam Early Access | EA window, main story length, roadmap | Release / Chapters | Guide | ~15-hour main story, ~1-year EA plan. |
+| `/story-setting` | `src/data/pages/fixed-pages.ts` (storySettingPage) | Guides | 1666 Amsterdam story setting | 1666 Dutch Golden Age, dual day/night city | Noa Brooklyn / Chapters | Guide | Multi-borough chapter framing. |
+| `/noa-brooklyn` | `src/data/pages/fixed-pages.ts` (noaBrooklynPage) | Guides | 1666 Amsterdam Noa Brooklyn | The Collector protagonist | Aaron / Story | Character | Zaindaris-raised protagonist. |
+| `/aaron-companion` | `src/data/pages/fixed-pages.ts` (aaronCompanionPage) | Guides | 1666 Amsterdam Aaron | Cat companion and cat-vision | Noa Brooklyn / Story | Character | 1999 timeline cat with perspective switch. |
+| `/the-originals` | `src/data/pages/fixed-pages.ts` (theOriginalsPage) | Guides | 1666 Amsterdam Originals | Ancient entities behind human faces | Esbat / Gablestone / Witchcraft | Guide | Antagonist faction. |
+| `/witchcraft` | `src/data/pages/fixed-pages.ts` (witchcraftSpellcastingPage) | Guides | 1666 Amsterdam Witchcraft | Core magic verb in Esbat combat | Esbat / Originals | System | Spellcasting during moon-night fights. |
+| `/gablestone` | `src/data/pages/fixed-pages.ts` (gablestoneInvestigationPage) | Guides | 1666 Amsterdam Gablestone | Day-side investigation loop | Esbat / Originals | System | Free-choice task completion during the day. |
+| `/esbat` | `src/data/pages/fixed-pages.ts` (esbatMoonMissionsPage) | Guides | 1666 Amsterdam Esbat | Moon-night ritual that reveals true forms | Originals / Gablestone / Witchcraft | System | Triggers on moon phase after Gablestone evidence. |
+| `/chapters` | `src/data/pages/fixed-pages.ts` (multiBoroughChaptersPage) | Guides | 1666 Amsterdam chapters | Multi-borough structure and EA roadmap | Early Access FAQ / Story | Guide | Prologue is chapter one; rest follow in EA window. |
+| `/patrice-desilets` | `src/data/pages/fixed-pages.ts` (patriceDesiletsLegacyPage) | Guides | 1666 Amsterdam Patrice Désilets | Creative director lineage at Panache Digital Games | Press coverage | Trust | New IP at Panache Digital Games; not AC sequel. |
+| `/press-coverage` | `src/data/pages/fixed-pages.ts` (pressCoveragePage) | Release | 1666 Amsterdam press coverage | IGN and Eurogamer previews, review status | Release / Patrice Désilets | Trust | Preview-led coverage at EA launch. |
+| `/wiki` | `src/data/pages/fixed-pages.ts` (wikiFixturePage) | Wiki | 1666 Amsterdam wiki | Verified facts and sources | Release / Story | Hub fixture | Template fixture for review-date rendering validation. |
+| `/about` | `src/data/pages/fixed-pages.ts` (aboutFixturePage) | Site | about 1666 Amsterdam Guide | Trust and editorial policy | Release | Trust fixture | Template fixture; unofficial editorial policy. |
+| `/faq` | `src/data/pages/fixed-pages.ts` (faqFixturePage) | FAQ | 1666 Amsterdam FAQ | Common launch and systems questions | Release / Story | Answer hub fixture | Template fixture; FAQ JSON-LD enabled. |
+| `/guides` | `src/data/pages/fixed-pages.ts` (guidesFixturePage) | Guides | 1666 Amsterdam guides | Browse all guides by topic | Release / Story | Hub fixture | Template fixture; guides index. |
 
 ## Generated Route Families
 
-- Fixed and tool pages: authored in `src/data/pages/*.ts` with explicit locale and final URL.
-- Entity Hubs and details: generated from `src/data/entities.ts` and the generic renderer in `src/lib/entities.ts`.
-- Final route inventory: `npm run routes:manifest`.
-- Secondary-locale routes use the prefix configured in `src/data/site.ts`; the primary locale remains on root paths.
+- All 19 fixed pages: authored in `src/data/pages/home.ts` and `src/data/pages/fixed-pages.ts` with explicit locale `en-US` and final URL.
+- Entity Hubs and details: not generated (entity families empty per content-package.json).
+- Final route inventory: `npm run routes:manifest` → 19 routes.
+- Secondary locales are not configured for launch (en-US only); the launch_locales list is `["en-US"]`.
 
 ## Content Clusters
 
-- Launch facts: `/release-date`, `/faq`
-- Official facts and safe guide structure: `/wiki`, `/guides`
-- Evergreen hub and trust: `/`, `/about`, `/contact`, `/privacy-policy`, `/terms`
+- Launch facts: `/release`, `/system-requirements`, `/early-access`, `/press-coverage`
+- Story and characters: `/story-setting`, `/noa-brooklyn`, `/aaron-companion`, `/chapters`
+- Core systems: `/the-originals`, `/witchcraft`, `/gablestone`, `/esbat`
+- Prologue and creator: `/prologue-demo`, `/patrice-desilets`
+- Evergreen hub and trust: `/`, `/wiki`, `/guides`, `/faq`, `/about`
 
 ## Internal Linking Map
 
-- Homepage should link to the most current high-demand pages.
-- Wiki should link to guide and release pages.
-- Guides should link to wiki and release pages.
-- Release Date should link to FAQ and official sources.
-- FAQ should include all current high-demand answer pages.
+- Homepage (`/`) links to all 14 topic pages via the entity-grid module and the 14-item relatedPageIds array.
+- `/story-setting` and `/chapters` cross-link protagonist/system pages.
+- System pages (`/the-originals`, `/witchcraft`, `/gablestone`, `/esbat`) cross-link each other in a 4-way loop.
+- `/press-coverage` links to `/release` and `/patrice-desilets`.
+- `/prologue-demo` and `/early-access` link to `/release`, `/story-setting`, and `/chapters`.
+
+## Topic Clusters
+
+The 14 topic pages partition into four clusters:
+
+1. Launch & Platforms (`/release`, `/system-requirements`, `/prologue-demo`, `/early-access`, `/press-coverage`)
+2. Story & Setting (`/story-setting`, `/noa-brooklyn`, `/aaron-companion`, `/chapters`)
+3. Enemies & Magic (`/the-originals`, `/witchcraft`, `/gablestone`, `/esbat`)
+4. Creator & Press (`/patrice-desilets`, `/press-coverage`)
 
 ## Open Questions
 
-- Replace this section with game-specific unknowns during content configuration.
+- Additional locales beyond `en-US` are not declared. If a secondary locale is added, all page URLs must be localized via `localizePath` and `translationKey` must match across locales.
+- Aggregate review scores on OpenCritic and full review publications are pending as of 2026-08-26.
