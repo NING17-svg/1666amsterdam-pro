@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "1666amsterdam-pro" generated at 2026-08-26T10:22:29.512Z.
