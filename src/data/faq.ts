@@ -177,6 +177,46 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "official",
   },
+  {
+    id: "demo-bateratze",
+    question: "What is the Bateratze cat companion choice in the 1666 Amsterdam Prologue?",
+    answer:
+      "The Bateratze is the tarot cat companion you commit to at the Sacred Tree in the Prologue demo. The carousel presents six archetypes — Spirit, Hermit, Dreamer, Wildling, Guardian, and Alchemist — and no stat differences are shown at the choice screen. Pick the archetype you want to see in the later cat sequence; the Prologue does not surface an official build-sheet difference. Source: 9puz Prologue walkthrough.",
+    pageIds: ["fixed-prologue-demo-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "demo-walkthrough",
+    question: "Is there a step-by-step walkthrough for the 1666 Amsterdam Prologue demo?",
+    answer:
+      "Yes. The Prologue routes through the Forest Opening Lux cycle, the Sacred Tree Bateratze choice, the Library Section VI / Section XIV clue puzzle, the 1999 Hotel ritual items as Aaron, and the cat portal traversal back at the Sacred Tree. The milestone order is Forest Opening → Commencement → Bateratze selection → Library → Library Section XIV → 1999 Hotel → cat traversal and finish. Source: 9puz Prologue walkthrough.",
+    pageIds: ["fixed-prologue-demo-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "demo-library",
+    question: "Where are the Library Section XIV clues in the 1666 Amsterdam Prologue?",
+    answer:
+      "Section XIV covers Rembrandt and Dutch Golden Age material and sits on the upper level above the desk area of the Library. Search the bust of Rembrandt to obtain the Hidden Note. The first search opens a readable Ancient Civilizations entry; the second surfaces the Hidden Note with Aaron's message above protected script. Section VI, by contrast, runs along the library wall to Lucas's left and uses Concentrate to expose white points of interest. Source: 9puz Prologue walkthrough.",
+    pageIds: ["fixed-prologue-demo-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "demo-hotel-items",
+    question: "What ritual items does the 1999 Hotel scene in the 1666 Amsterdam Prologue need?",
+    answer:
+      "The 1999 Hotel sequence plays as Aaron on December 30, 1999 and requires three ritual items: four candles from the wooden chest beneath the window, dry leaves from the low dresser under the round wall mirror, and the tapestry from the open luggage on the striped sofa. Pick them up in any order — once all three are in the inventory, the ceremony cutscene starts automatically. Source: 9puz Prologue walkthrough.",
+    pageIds: ["fixed-prologue-demo-en-us"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
 
   // early-access-faq
   {

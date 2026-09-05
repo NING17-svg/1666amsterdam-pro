@@ -41,3 +41,10 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Files changed: `src/data/pages/fixed-pages.ts`, `src/data/navigation.ts`, `src/data/pages/home.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
 - URLs affected: two new fixed pages (`/troubleshooting`, `/controls`); cross-links added on `/`, `/system-requirements`, `/esbat`, `/gablestone`, `/witchcraft`, `/noa-brooklyn`, `/aaron-companion`, `/early-access`. No existing URL was removed or redirected.
 - 11 new FAQ entries added (`tshoot-*` x5 and `ctrl-*` x6), all sourced to the PixelNitro, Worldeka, VGTimes, XModHub, and MagicGameWorld launch-window guides.
+
+## 2026-09-01 — Prologue demo completion (Bateratze, Library, 1999 Hotel, cat portal)
+- Expanded `/prologue-demo` with the Bateratze tarot cat companion choice (Spirit, Hermit, Dreamer, Wildling, Guardian, Alchemist), a milestone-by-milestone walkthrough (Forest Opening → Commencement → Sacred Tree → Library → Section XIV → 1999 Hotel → cat portal traversal), Library Section VI / Section XIV clue locations (Rembrandt bust + Hidden Note), 1999 Hotel ritual items (four candles, dry leaves, tapestry), and cat portal traversal tips at the Sacred Tree.
+- Added cross-links from `/aaron-companion`, `/story-setting`, and `/chapters` to the new `/prologue-demo` walkthrough content, and added a Prologue-link module in `/aaron-companion` covering the tarot-cat companion system.
+- Files changed: `src/data/pages/fixed-pages.ts` (prologueDemoPage, aaronCompanionPage, storySettingPage, multiBoroughChaptersPage), `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/prologue-demo`, `/aaron-companion`, `/story-setting`, `/chapters`. No existing URL was removed or redirected.
+- 4 new FAQ entries added (`demo-bateratze`, `demo-walkthrough`, `demo-library`, `demo-hotel-items`), sourced to the 9puz Prologue walkthrough and the Sportskeeda Prologue walkthrough.

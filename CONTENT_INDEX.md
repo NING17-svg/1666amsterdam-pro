@@ -13,7 +13,7 @@ The rows below are the primary-locale baseline for 1666: Amsterdam (1666amsterda
 | `/` | `src/data/pages/home.ts` | Landing | 1666: Amsterdam | Find EA launch status, Prologue demo, and systems | Prologue demo / Release | Hub | Split-panel variant; EA launch hub for 2026-08-25 Steam release. |
 | `/release` | `src/data/pages/fixed-pages.ts` (releasePlatformsPage) | Release | 1666 Amsterdam release date | Check EA launch date and platforms | Prologue demo / Early Access FAQ | Launch hub | Steam AppID 3949550, EA launch 2026-08-25, PC-only as of 2026-08-26. |
 | `/system-requirements` | `src/data/pages/fixed-pages.ts` (systemRequirementsPage) | Wiki | 1666 Amsterdam system requirements | Check PC specs | Release & Platforms | Reference | No published min/rec; Prologue demo as benchmark. |
-| `/prologue-demo` | `src/data/pages/fixed-pages.ts` (prologueDemoPage) | Guides | 1666 Amsterdam Prologue demo | How to play the free Steam demo | Release / Early Access FAQ | Guide | Demo entry under Steam AppID 3949550. |
+| `/prologue-demo` | `src/data/pages/fixed-pages.ts` (prologueDemoPage) | Guides | 1666 Amsterdam Prologue demo | How to play the free Steam demo and finish the Bateratze, Library, 1999 Hotel, and cat portal sequence | Release / Early Access FAQ / Aaron / Story / Chapters | Guide | Demo entry under Steam AppID 3949550; milestone walkthrough + Bateratze tarot cat choice + Library Section XIV + 1999 Hotel ritual items + cat portal traversal. |
 | `/early-access` | `src/data/pages/fixed-pages.ts` (earlyAccessFaqPage) | Guides | 1666 Amsterdam Early Access | EA window, main story length, roadmap | Release / Chapters | Guide | ~15-hour main story, ~1-year EA plan. |
 | `/story-setting` | `src/data/pages/fixed-pages.ts` (storySettingPage) | Guides | 1666 Amsterdam story setting | 1666 Dutch Golden Age, dual day/night city | Noa Brooklyn / Chapters | Guide | Multi-borough chapter framing. |
 | `/noa-brooklyn` | `src/data/pages/fixed-pages.ts` (noaBrooklynPage) | Guides | 1666 Amsterdam Noa Brooklyn | The Collector protagonist | Aaron / Story | Character | Zaindaris-raised protagonist. |
@@ -53,7 +53,7 @@ The rows below are the primary-locale baseline for 1666: Amsterdam (1666amsterda
 - `/story-setting` and `/chapters` cross-link protagonist/system pages.
 - System pages (`/the-originals`, `/witchcraft`, `/gablestone`, `/esbat`) cross-link each other in a 4-way loop.
 - `/press-coverage` links to `/release` and `/patrice-desilets`.
-- `/prologue-demo` and `/early-access` link to `/release`, `/story-setting`, and `/chapters`.
+- `/prologue-demo` and `/early-access` link to `/release`, `/story-setting`, `/chapters`, and (after the Prologue demo expansion) `/aaron-companion` for the tarot-cat companion system.
 - `/troubleshooting` cross-links to `/system-requirements`, `/prologue-demo`, `/esbat`, `/gablestone`, and `/controls`.
 - `/controls` cross-links to `/noa-brooklyn`, `/aaron-companion`, `/witchcraft`, `/gablestone`, `/esbat`, and `/troubleshooting`.
 

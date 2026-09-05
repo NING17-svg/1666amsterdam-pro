@@ -175,9 +175,9 @@ export const prologueDemoPage: PageContent = {
   h1: "1666 Amsterdam Prologue Demo: How to Play and What is Inside",
   seoTitle: "1666 Amsterdam Prologue Demo: How to Play and What is Inside",
   metaDescription:
-    "The 1666 Amsterdam Prologue demo is on Steam and covers the intro with Noa and Aaron. See how to access it, what is included, and how it differs from Early Access.",
+    "The 1666 Amsterdam Prologue demo is on Steam and covers the intro with Noa and Aaron. See how to access it, what is included, the Bateratze cat choice, and how it differs from Early Access.",
   summary:
-    "The 1666 Amsterdam Prologue demo is a free Steam download under AppID 3949550 that lets you play the introduction of Noa Brooklyn and Aaron before the Early Access build. It uses the same dual day-and-night 1666 Amsterdam city and the same Noa-and-Aaron perspective switching as the Early Access release, but it covers only the opening segment.",
+    "The 1666 Amsterdam Prologue demo is a free Steam download under AppID 3949550 that lets you play the introduction of Noa Brooklyn and Aaron before the Early Access build. It uses the same dual day-and-night 1666 Amsterdam city and the same Noa-and-Aaron perspective switching as the Early Access release, but it covers only the opening segment, the Bateratze tarot cat choice, and the Library / 1999 Hotel prologue sequence.",
   hero: {
     eyebrow: "Prologue Demo",
     subtitle:
@@ -189,13 +189,14 @@ export const prologueDemoPage: PageContent = {
     ],
   },
   quickAnswer:
-    "The 1666 Amsterdam Prologue demo is a free Steam download under AppID 3949550 that lets you play the introduction of Noa Brooklyn and Aaron before the Early Access build. It uses the same dual day-and-night 1666 Amsterdam city and the same Noa-and-Aaron perspective switching as the Early Access release, but it covers only the opening segment. The Prologue demo is the recommended way to try 1666 Amsterdam before buying the Early Access pass.",
+    "The 1666 Amsterdam Prologue demo is a free Steam download under AppID 3949550 that lets you play the introduction of Noa Brooklyn and Aaron before the Early Access build. It uses the same dual day-and-night 1666 Amsterdam city and the same Noa-and-Aaron perspective switching as the Early Access release, but it covers only the opening segment. The Prologue demo also routes you through the Forest Opening, the Sacred Tree Bateratze cat choice, the Library Section XIV clue puzzle, the 1999 Hotel ritual scene, and the cat portal traversal that completes the Prologue.",
   keyFacts: [
     { label: "Price", value: "Free" },
     { label: "Platform", value: "Steam (PC)" },
     { label: "Content", value: "Intro of Noa Brooklyn and Aaron" },
     { label: "Engine", value: "Same as Early Access build" },
     { label: "Save carryover", value: "No — standalone preview" },
+    { label: "Bateratze choice", value: "Spirit, Hermit, Dreamer, Wildling, Guardian, Alchemist" },
   ],
   modules: [
     {
@@ -208,7 +209,7 @@ export const prologueDemoPage: PageContent = {
       id: "demo-find",
       type: "prose",
       heading: "Where to Find the 1666 Amsterdam Prologue Demo",
-      body: "The Prologue demo lives on the same Steam store listing as the Early Access build of 1666 Amsterdam, under Steam AppID 3949550. Panache Digital Games publishes it as a free, separate download so players can sample the introduction without buying the Early Access pass. Install it through the Steam client by searching for 1666 Amsterdam, opening the store page, and selecting the demo from the available play options.\n\nThe demo is currently a Steam-only release. There is no confirmed console demo for PlayStation 5, Xbox Series X|S, Xbox One, Nintendo Switch, or Switch 2 as of 2026-08-26, and Panache Digital Games has not announced post-launch extensions to the demo. The Steam listing is the only authoritative source for whether a 1666 Amsterdam Prologue demo is live, so players should start there.",
+      body: "The Prologue demo lives on the same Steam store listing as the Early Access build of 1666 Amsterdam, under Steam AppID 3949550. Panache Digital Games publishes it as a free, separate download so players can sample the introduction without buying the Early Access pass. Install it through the Steam client by searching for 1666 Amsterdam, opening the store page, and selecting the demo from the available play options.\n\nThe demo is currently a Steam-only release. There is no confirmed console demo for PlayStation 5, Xbox Series X|S, Xbox One, Nintendo Switch, or Switch 2 as of 2026-09-01, and Panache Digital Games has not announced post-launch extensions to the demo. The Steam listing is the only authoritative source for whether a 1666 Amsterdam Prologue demo is live, so players should start there.",
     },
     {
       id: "demo-steps",
@@ -238,6 +239,23 @@ export const prologueDemoPage: PageContent = {
       type: "prose",
       heading: "What Content the Prologue Demo Covers",
       body: "The 1666 Amsterdam Prologue demo focuses on the opening of the story, introducing Noa Brooklyn and her cat companion Aaron inside the handcrafted 1666 Amsterdam city. Players get a hands-on look at the perspective switch between Noa and Aaron, including the cat-vision mechanic that Aaron brings from the 1999 timeline. IGN's Prologue hands-on preview describes the demo as a focused introduction that establishes the dual-protagonist loop before players reach the larger Early Access scope.\n\nThe demo does not include the full 15-hour main story or the multi-borough chapter structure that opens the Early Access build. It also does not include post-introduction systems such as the full Gablestone investigation loop or the timed Esbat moon-night missions, because those systems expand across the EA main story. Use the demo to evaluate the combat feel, the cat-vision switching, and the 1666 Amsterdam setting, then move into Early Access for the full chapter experience.",
+      links: [
+        {
+          label: "Aaron the cat companion",
+          href: "/aaron-companion/",
+          description: "1999 timeline cat with cat-vision perspective switch.",
+        },
+        {
+          label: "Multi-borough chapters",
+          href: "/chapters/",
+          description: "Prologue is chapter one; rest follow in the EA window.",
+        },
+        {
+          label: "Story & setting",
+          href: "/story-setting/",
+          description: "1666 Dutch Golden Age dual day/night city context.",
+        },
+      ],
     },
     {
       id: "demo-vs-ea",
@@ -247,7 +265,7 @@ export const prologueDemoPage: PageContent = {
         {
           name: "Prologue demo",
           summary:
-            "Free, Steam-only, covers the intro of Noa Brooklyn and Aaron with the same engine and setting as EA. No multi-borough chapter content or full Esbat missions.",
+            "Free, Steam-only, covers the intro of Noa Brooklyn and Aaron with the same engine and setting as EA. Includes the Bateratze cat choice, the Library clue puzzle, the 1999 Hotel scene, and the cat portal traversal. No multi-borough chapter content or full Esbat missions.",
           bestFor: "Trying the game before buying Early Access or testing hardware.",
           badge: "Free",
         },
@@ -267,21 +285,141 @@ export const prologueDemoPage: PageContent = {
       body: "The 1666 Amsterdam Prologue demo is most useful for players who want to test the game on their hardware, players who want to confirm the cat-vision mechanic feels right, and players who want to experience the introduction before committing to the Early Access window. It is also useful for press and content creators who need to evaluate the title without buying the EA pass. Players who already bought Early Access can still play the demo as a clean way to revisit the intro.\n\nAfter finishing the demo, players who want to keep going should buy the Early Access build on the same Steam listing. The Prologue demo does not grant access to the EA main story, the multi-borough chapters, or any future content updates. There is no demo-to-EA upgrade path beyond the standard Steam purchase, and no announced bundle that combines the demo with bonus content.",
     },
     {
+      id: "demo-bateratze",
+      type: "prose",
+      heading: "Bateratze Cat Companion Choice in the Prologue",
+      body: "The Bateratze is the witch's familiar cat that Noa Brooklyn commits to at the Sacred Tree near the end of the Forest Opening segment. Once the red-leaf torch is enchanted and Lux is gathered a second time at the Commencement Fire Pan, the Prologue presents a carousel of six tarot cat archetypes: The Spirit, The Hermit, The Dreamer, The Wildling, The Guardian, and The Alchemist. Each one represents a different playstyle hint — story-led, careful exploration, discovery, open-world, combat-leaning, and magic-focused — but the Prologue does not surface any stat differences on the choice screen. The on-screen confirmation reads as a commitment rather than a build sheet, and the successful pick produces a 'Union Cat Chosen' notice that advances the story.\n\nBecause the choice is locked in for the rest of the Prologue, the practical guidance is to pick the appearance and archetype you want to see in the later cat sequence. The 9puz Prologue walkthrough explicitly warns against basing the pick on unofficial tier lists, since no stat bonus is shown next to any of the six options at the Sacred Tree. Players who want to test multiple Bateratze picks can do so across separate demo installs, because the Prologue save does not carry over into the Early Access build.",
+      links: [
+        {
+          label: "Aaron the cat companion",
+          href: "/aaron-companion/",
+          description: "The 1999 timeline cat that pairs with Noa on the day-side loop.",
+        },
+      ],
+    },
+    {
+      id: "demo-bateratze-grid",
+      type: "entity-grid",
+      heading: "Six Bateratze Cat Archetypes at the Sacred Tree",
+      items: [
+        {
+          title: "The Spirit",
+          summary:
+            "Mystical / otherworldly archetype. The Prologue surfaces no stat difference; pick for the archetype you want in the later cat sequence.",
+          badge: "Story-led",
+        },
+        {
+          title: "The Hermit",
+          summary:
+            "Solitary / wise archetype. No stat difference shown at the Sacred Tree carousel.",
+          badge: "Careful",
+        },
+        {
+          title: "The Dreamer",
+          summary:
+            "Curious / imaginative archetype. No stat difference shown at the Sacred Tree carousel.",
+          badge: "Discovery",
+        },
+        {
+          title: "The Wildling",
+          summary:
+            "Free / nature-loving archetype. No stat difference shown at the Sacred Tree carousel.",
+          badge: "Open-world",
+        },
+        {
+          title: "The Guardian",
+          summary:
+            "Protective / defensive archetype. No stat difference shown at the Sacred Tree carousel.",
+          badge: "Combat-leaning",
+        },
+        {
+          title: "The Alchemist",
+          summary:
+            "Magic-focused archetype. No stat difference shown at the Sacred Tree carousel.",
+          badge: "Magic",
+        },
+      ],
+    },
+    {
+      id: "demo-walkthrough",
+      type: "steps",
+      heading: "Prologue Milestone-by-Milestone Walkthrough",
+      items: [
+        {
+          title: "Forest Opening — gather Lux and enchant the red-leaf torch",
+          body: "At the first Life Echo, gather Lux, then Concentrate on the red-leaf torch and hold Enchant. This is the tutorial beat that teaches the Lux / Enchant interaction.",
+        },
+        {
+          title: "Commencement (December 1665) — repeat the Lux cycle",
+          body: "At the Commencement Fire Pan, repeat the Lux gathering cycle so the Prologue ritual can move forward to the Sacred Tree.",
+        },
+        {
+          title: "Sacred Tree — pick your Bateratze cat companion",
+          body: "Analyze the cats at the Sacred Tree (hold Concentrate on the highlighted group), then confirm a Bateratze from the carousel. Pick the archetype you want; no stat differences are shown.",
+        },
+        {
+          title: "Library (as Clio) — find Section VI and return to Lucas",
+          body: "Use the registry along the library wall to Lucas's left to find Section VI. Concentrate exposes white points of interest. Return to Lucas once you have the Section VI entry.",
+        },
+        {
+          title: "Library — recover the Hidden Note from Section XIV",
+          body: "Move to the upper level above the desk area. Search the Rembrandt bust to obtain the Hidden Note with Aaron's message. The first search opens a readable Ancient Civilizations entry; the second surfaces the Hidden Note above protected script.",
+        },
+        {
+          title: "1999 Hotel (as Aaron, Dec 30, 1999) — collect the ritual items",
+          body: "Follow Agnes. Pick up the four candles from the chest beneath the window, the dry leaves from the low dresser under the round wall mirror, and the tapestry from the open luggage on the striped sofa. Once all three are collected, the ceremony cutscene starts automatically.",
+        },
+        {
+          title: "Cat portal traversal and Sacred Tree finish",
+          body: "Follow the blue cat-eye marks through the room and corridor; pass the red-lit threshold into the forest. At the clearing, Concentrate and Analyze the frozen red-hooded woman (Noa). Move around the rear of the Sacred Tree, step onto the low roots, climb the branch curling above Noa, and touch the blue translucent feline trace.",
+        },
+      ],
+    },
+    {
+      id: "demo-library",
+      type: "prose",
+      heading: "Library Section XIV and the Roman-Numeral Clues",
+      body: "The Library clue puzzle is split between Section VI and Section XIV. Section VI covers ancient writing systems and languages, and you locate it along the library wall to Lucas's left by using Concentrate to expose white points of interest. Once the Section VI entry is readable, return to Lucas and he unlocks the next step.\n\nSection XIV is the Rembrandt and Dutch Golden Age material, and it sits on the upper level above the desk area. Search the bust of Rembrandt to obtain the Hidden Note. The first search opens a readable Ancient Civilizations entry; the second search surfaces the Hidden Note with Aaron's message above protected script. Treat the Rembrandt bust as the load-bearing puzzle object — many community walkthroughs note that players who wander the upper stacks without checking the bust miss the Hidden Note entirely.",
+    },
+    {
+      id: "demo-portal",
+      type: "prose",
+      heading: "Cat Portal Traversal Tips",
+      body: "The Prologue finishes with a cat-only traversal sequence that routes you from the 1999 Hotel back into the Forest Opening and up the Sacred Tree. Use the Cat Senses action when the route becomes visually noisy, and follow the blue cat-eye marks through the room and corridor. Accelerate when the 'Move Faster' tutorial appears, then pass the red-lit threshold back into the forest.\n\nAt the clearing, Concentrate and Analyze the frozen red-hooded woman — the 9puz walkthrough identifies her as Noa the Collector. The common failure signal here is standing below Noa after analysis with no new dialogue; the answer is vertical. Move around the rear of the Sacred Tree, step onto the low roots, climb the branch curling above Noa, and reach the blue translucent feline trace with an interaction marker. Touching the trace triggers the Prologue completion sequence and cements the cat companion bond set up at the Sacred Tree earlier.",
+    },
+    {
+      id: "demo-hotel",
+      type: "prose",
+      heading: "1999 Hotel Ritual Items (Aaron, December 30, 1999)",
+      body: "The 1999 Hotel sequence plays as Aaron, the cat companion, and uses three ritual items rather than a stat challenge. Pick them up in any order — once all three are in the inventory, the ceremony cutscene begins automatically and the Prologue advances to the cat portal traversal.\n\n- Four candles — wooden chest beneath the window, beside the armchair. Pickup readout shows `x4 Candles`.\n- Dry leaves — low dresser under the round wall mirror near the room entrance.\n- Tapestry — open luggage on the striped sofa.\n\nThe items do not require manual placement; the cutscene handles the ritual arrangement. After the ceremony, the narration switches to 'When everything was ready…' and the cat portal traversal starts.",
+    },
+    {
       id: "demo-sources",
       type: "prose",
       heading: "Sources",
-      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-08-26` - Confirms the 1666 Amsterdam Prologue demo is live on Steam under AppID 3949550 as a free download alongside the EA build.\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-08-26` - Developer and self-publisher identity for the demo and the EA build.\n- [IGN: 1666: Amsterdam Prologue hands-on preview](https://www.ign.com/articles/1666-amsterdam-prologue-hands-on-preview) - `media/interview` - checked `2026-08-26` - Attributed description of the Prologue demo as a focused intro to Noa and Aaron and the dual-protagonist cat-vision loop.\n- [IGN: 1666: Amsterdam preview](https://www.ign.com/articles/1666-amsterdam-preview) - `media/interview` - checked `2026-08-26` - Attributed description of the broader EA scope that the demo only partially covers.\n- [SteamDB listing for AppID 3949550](https://steamdb.info/app/3949550/) - `wiki/reference` - checked `2026-08-26` - Discovery only for the Prologue demo entry on AppID 3949550; not used as the sole fact source.",
+      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-09-01` - Confirms the 1666 Amsterdam Prologue demo is live on Steam under AppID 3949550 as a free download alongside the EA build.\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-09-01` - Developer and self-publisher identity for the demo and the EA build.\n- [IGN: 1666: Amsterdam Prologue hands-on preview](https://www.ign.com/articles/1666-amsterdam-prologue-hands-on-preview) - `media/interview` - checked `2026-09-01` - Attributed description of the Prologue demo as a focused intro to Noa and Aaron and the dual-protagonist cat-vision loop.\n- [IGN: 1666: Amsterdam preview](https://www.ign.com/articles/1666-amsterdam-preview) - `media/interview` - checked `2026-09-01` - Attributed description of the broader EA scope that the demo only partially covers.\n- [9puz: 1666 Amsterdam Prologue walkthrough](https://9puz.com/4730-1666-amsterdam-prologue-walkthrough/) - `wiki/reference` - checked `2026-09-01` - Walkthrough of the Forest Opening Lux cycle, Sacred Tree Bateratze carousel, Library Section VI / Section XIV clue locations, 1999 Hotel ritual items (candles, dry leaves, tapestry), and cat portal traversal at the Sacred Tree.\n- [Sportskeeda: 1666 Amsterdam Prologue walkthrough](https://widgets.sportskeeda.com/esports/1666-amsterdam-prologue-walkthrough) - `media/interview` - checked `2026-09-01` - Walkthrough covering the Bateratze tarot cat companion options, Prologue milestone order, and cat portal traversal tips for the demo completion sequence.\n- [SteamDB listing for AppID 3949550](https://steamdb.info/app/3949550/) - `wiki/reference` - checked `2026-09-01` - Discovery only for the Prologue demo entry on AppID 3949550; not used as the sole fact source.",
     },
   ],
-  faqIds: ["demo-download", "demo-full-game", "demo-console", "demo-save"],
+  faqIds: [
+    "demo-download",
+    "demo-full-game",
+    "demo-console",
+    "demo-save",
+    "demo-bateratze",
+    "demo-walkthrough",
+    "demo-library",
+    "demo-hotel-items",
+  ],
   relatedPageIds: [
     "fixed-release-platforms-en-us",
     "fixed-early-access-faq-en-us",
     "fixed-story-setting-en-us",
+    "fixed-aaron-companion-en-us",
+    "fixed-multi-borough-chapters-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
-  lastReviewed: "2026-08-26",
+  lastReviewed: "2026-09-01",
 };
 
 export const earlyAccessFaqPage: PageContent = {
@@ -475,13 +613,20 @@ export const storySettingPage: PageContent = {
       id: "story-cast",
       type: "prose",
       heading: "Cast, Languages, and Sources",
-      body: "The setting also leans on a layered cast. Noa Brooklyn is the player character, Aaron is the second playable character and cat companion from the 1999 timeline, and the named suspects and Originals are met as borough residents before they are fought on Esbat nights. The 11 supported UI languages do not change the cast or the lore but do change the in-game text players will read while investigating. Source maps to the same Steam AppID 3949550 page and the Panache Digital Games official site, with IGN's preview and Eurogamer's preview as the strongest media context.",
+      body: "The setting also leans on a layered cast. Noa Brooklyn is the player character, Aaron is the second playable character and cat companion from the 1999 timeline, and the named suspects and Originals are met as borough residents before they are fought on Esbat nights. The 11 supported UI languages do not change the cast or the lore but do change the in-game text players will read while investigating. Source maps to the same Steam AppID 3949550 page and the Panache Digital Games official site, with IGN's preview and Eurogamer's preview as the strongest media context.\n\nThe Prologue demo is the earliest place players encounter this layered cast in playable form. The Forest Opening and Sacred Tree sequence introduces the Bateratze tarot cat companion system, the Library sequence frames the 1666 investigation loop as a clue puzzle, the 1999 Hotel scene drops Aaron into his own timeline as a cat, and the cat portal traversal stitches the 1666 and 1999 perspectives back together at the Sacred Tree.",
+      links: [
+        {
+          label: "Prologue demo walkthrough",
+          href: "/prologue-demo/",
+          description: "Forest Opening, Sacred Tree Bateratze choice, Library clues, 1999 Hotel, cat portal.",
+        },
+      ],
     },
     {
       id: "story-sources",
       type: "prose",
       heading: "Sources",
-      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-08-26` - EA launch date, Prologue demo, multi-borough chapter structure, ~15 hours of main story at EA start\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-08-26` - developer identity, 1666 Dutch Golden Age dual day/night handcrafted open city, Zaindaris-raised protagonist\n- [IGN: 1666: Amsterdam preview](https://www.ign.com/articles/1666-amsterdam-preview) - `media/interview` - checked `2026-08-26` - day-side investigation, Esbat night-side combat, multi-borough chapter framing\n- [Eurogamer: 1666: Amsterdam preview](https://www.eurogamer.net/1666-amsterdam-preview) - `media/interview` - checked `2026-08-26` - dual day/night city framing, Noa Brooklyn and Aaron perspective pairing",
+      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-09-01` - EA launch date, Prologue demo, multi-borough chapter structure, ~15 hours of main story at EA start\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-09-01` - developer identity, 1666 Dutch Golden Age dual day/night handcrafted open city, Zaindaris-raised protagonist\n- [IGN: 1666: Amsterdam preview](https://www.ign.com/articles/1666-amsterdam-preview) - `media/interview` - checked `2026-09-01` - day-side investigation, Esbat night-side combat, multi-borough chapter framing\n- [Eurogamer: 1666: Amsterdam preview](https://www.eurogamer.net/1666-amsterdam-preview) - `media/interview` - checked `2026-09-01` - dual day/night city framing, Noa Brooklyn and Aaron perspective pairing\n- [9puz: 1666 Amsterdam Prologue walkthrough](https://9puz.com/4730-1666-amsterdam-prologue-walkthrough/) - `wiki/reference` - checked `2026-09-01` - Prologue Bateratze cat companion choice and Forest Opening / Sacred Tree / Library / 1999 Hotel / cat portal sequence used to anchor the cast in this section",
     },
   ],
   faqIds: [
@@ -495,6 +640,7 @@ export const storySettingPage: PageContent = {
     "fixed-noa-brooklyn-en-us",
     "fixed-aaron-companion-en-us",
     "fixed-multi-borough-chapters-en-us",
+    "fixed-prologue-demo-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -634,14 +780,27 @@ export const aaronCompanionPage: PageContent = {
       id: "aaron-unannounced",
       type: "callout",
       tone: "unknown",
-      title: "What remains unannounced as of 2026-08-26",
+      title: "What remains unannounced as of 2026-09-01",
       body: "His exact age in the 1999 timeline, his full upgrade tree, his named relationship to the Zaindaris, and whether he has a separate combat moveset during Esbat nights are all unannounced. The Steam store description, the Panache Digital Games official site, and IGN's previews are the strongest anchors for the current confirmed framing; the Reddit r/1666Amsterdam cat-choice discussion threads reflect community demand for more Aaron detail rather than official fact.",
+    },
+    {
+      id: "aaron-prologue-link",
+      type: "prose",
+      heading: "Aaron in the Prologue Demo",
+      body: "The Prologue demo on Steam is the first place players meet Aaron as a tarot-cat companion system rather than just a perspective switch. Noa commits to a Bateratze cat archetype at the Sacred Tree, and the 1999 Hotel sequence plays entirely as Aaron — the candles, dry leaves, and tapestry pickup beats are framed as a 1999 ritual scene rather than as 1666 gameplay. The cat portal traversal at the end of the Prologue is also the moment where Aaron's 1999 perspective and Noa's 1666 perspective are stitched back together, which is why the Prologue is the most direct hands-on preview of Aaron's role.",
+      links: [
+        {
+          label: "Prologue demo walkthrough",
+          href: "/prologue-demo/",
+          description: "Bateratze choice, Library clues, 1999 Hotel ritual items, cat portal traversal.",
+        },
+      ],
     },
     {
       id: "aaron-sources",
       type: "prose",
       heading: "Sources",
-      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-08-26` - Aaron as cat companion, 1999 timeline origin, cat-vision perspective, EA launch on 2026-08-25\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-08-26` - Aaron as named playable character, dual day/night 1666 Amsterdam city\n- [IGN: 1666: Amsterdam Prologue hands-on preview](https://www.ign.com/articles/1666-amsterdam-prologue-hands-on-preview) - `media/interview` - checked `2026-08-26` - perspective switch framing, day-side scouting role, one-mission-two-bodies pairing\n- [Reddit r/1666Amsterdam](https://www.reddit.com/r/1666Amsterdam/) - `community/video` - checked `2026-08-26` - community demand signal around Aaron's role, used here for terminology not for fact confirmation",
+      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-09-01` - Aaron as cat companion, 1999 timeline origin, cat-vision perspective, EA launch on 2026-08-25\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-09-01` - Aaron as named playable character, dual day/night 1666 Amsterdam city\n- [IGN: 1666: Amsterdam Prologue hands-on preview](https://www.ign.com/articles/1666-amsterdam-prologue-hands-on-preview) - `media/interview` - checked `2026-09-01` - perspective switch framing, day-side scouting role, one-mission-two-bodies pairing\n- [9puz: 1666 Amsterdam Prologue walkthrough](https://9puz.com/4730-1666-amsterdam-prologue-walkthrough/) - `wiki/reference` - checked `2026-09-01` - 1999 Hotel ritual items (candles, dry leaves, tapestry) and cat portal traversal sequence that uses Aaron's 1999 perspective\n- [Sportskeeda: 1666 Amsterdam Prologue walkthrough](https://widgets.sportskeeda.com/esports/1666-amsterdam-prologue-walkthrough) - `media/interview` - checked `2026-09-01` - tarot cat companion system context for the Bateratze choice at the Sacred Tree\n- [Reddit r/1666Amsterdam](https://www.reddit.com/r/1666Amsterdam/) - `community/video` - checked `2026-09-01` - community demand signal around Aaron's role, used here for terminology not for fact confirmation",
     },
   ],
   faqIds: ["aaron-who", "aaron-cat-vision", "aaron-playable", "aaron-esbat", "aaron-tree"],
@@ -649,6 +808,7 @@ export const aaronCompanionPage: PageContent = {
     "fixed-noa-brooklyn-en-us",
     "fixed-story-setting-en-us",
     "fixed-controls-en-us",
+    "fixed-prologue-demo-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
@@ -1033,19 +1193,27 @@ export const multiBoroughChaptersPage: PageContent = {
       id: "chap-roadmap",
       type: "prose",
       heading: "What is the 1666 Amsterdam EA roadmap and chapter cadence?",
-      body: "The 1666 Amsterdam EA roadmap is the plan Panache Digital Games has set for shipping additional chapters during the Steam Early Access window. EA launch was 2026-08-25 with the Prologue chapter, roughly 15 hours of main story, and a roughly one-year EA plan. The Steam EA FAQ frames the EA roadmap as a progressive release of new chapters and borough content rather than a fixed content drop, and IGN's preview describes the EA roadmap as a story-driven rollout that will expand the multi-borough structure over time.\n\nThe 1666 Amsterdam EA roadmap also has practical implications for when players should expect new chapters. The roughly one-year EA plan means that new chapters and borough content are expected to ship throughout the EA window, but the exact chapter cadence, the post-EA retail scope, and any post-EA price change have not been announced as of 2026-08-26. The Steam EA FAQ is the official anchor for the roughly one-year plan, and IGN's preview and Eurogamer's preview add the strongest media context for the EA roadmap framing.\n\nPlayers looking up the 1666 Amsterdam chapter list should also note what the multi-borough structure does to length. Because each chapter is borough-anchored, the total main story length is not the 15 hours at EA start plus the same again per chapter; it is a borough-by-borough progression whose final scope depends on how many chapters Panache Digital Games ships during and after the EA window. The Steam EA FAQ, the Steam store page description, and the Panache Digital Games official site are the official anchors for the current confirmed facts; IGN's preview and Eurogamer's preview are the strongest media context.",
+      body: "The 1666 Amsterdam EA roadmap is the plan Panache Digital Games has set for shipping additional chapters during the Steam Early Access window. EA launch was 2026-08-25 with the Prologue chapter, roughly 15 hours of main story, and a roughly one-year EA plan. The Steam EA FAQ frames the EA roadmap as a progressive release of new chapters and borough content rather than a fixed content drop, and IGN's preview describes the EA roadmap as a story-driven rollout that will expand the multi-borough structure over time.\n\nThe 1666 Amsterdam EA roadmap also has practical implications for when players should expect new chapters. The roughly one-year EA plan means that new chapters and borough content are expected to ship throughout the EA window, but the exact chapter cadence, the post-EA retail scope, and any post-EA price change have not been announced as of 2026-09-01. The Steam EA FAQ is the official anchor for the roughly one-year plan, and IGN's preview and Eurogamer's preview add the strongest media context for the EA roadmap framing.\n\nPlayers looking up the 1666 Amsterdam chapter list should also note what the multi-borough structure does to length. Because each chapter is borough-anchored, the total main story length is not the 15 hours at EA start plus the same again per chapter; it is a borough-by-borough progression whose final scope depends on how many chapters Panache Digital Games ships during and after the EA window. The Steam EA FAQ, the Steam store page description, and the Panache Digital Games official site are the official anchors for the current confirmed facts; IGN's preview and Eurogamer's preview are the strongest media context.\n\nFor players who want to see the Prologue chapter in motion before buying the EA pass, the free Steam Prologue demo walks the same Forest Opening, Sacred Tree, Library, 1999 Hotel, and cat portal sequence that anchors chapter one, with the Bateratze tarot cat companion choice as the Prologue's main long-tail decision.",
+      links: [
+        {
+          label: "Prologue demo walkthrough",
+          href: "/prologue-demo/",
+          description: "Free Steam demo covering the chapter-one Prologue and the Bateratze choice.",
+        },
+      ],
     },
     {
       id: "chap-sources",
       type: "prose",
       heading: "Sources",
-      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-08-26` - Prologue as chapter one, EA launch date 2026-08-25, multi-borough chapter structure, ~15 hours of main story\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-08-26` - EA roadmap framing, multi-borough 1666 Amsterdam city, Panache self-publishing\n- [IGN: 1666: Amsterdam preview](https://www.ign.com/articles/1666-amsterdam-preview) - `media/interview` - checked `2026-08-26` - EA roadmap, multi-borough chapter framing, Prologue-as-entry-point\n- [Eurogamer: 1666: Amsterdam preview](https://www.eurogamer.net/1666-amsterdam-preview) - `media/interview` - checked `2026-08-26` - Prologue as opening, day-night loop per chapter, EA rollout framing",
+      body: "- [Steam store page for 1666: Amsterdam](https://store.steampowered.com/app/3949550) - `official/store` - checked `2026-09-01` - Prologue as chapter one, EA launch date 2026-08-25, multi-borough chapter structure, ~15 hours of main story\n- [Panache Digital Games official site](https://panachedigital.com/) - `official/store` - checked `2026-09-01` - EA roadmap framing, multi-borough 1666 Amsterdam city, Panache self-publishing\n- [IGN: 1666: Amsterdam preview](https://www.ign.com/articles/1666-amsterdam-preview) - `media/interview` - checked `2026-09-01` - EA roadmap, multi-borough chapter framing, Prologue-as-entry-point\n- [Eurogamer: 1666: Amsterdam preview](https://www.eurogamer.net/1666-amsterdam-preview) - `media/interview` - checked `2026-09-01` - Prologue as opening, day-night loop per chapter, EA rollout framing\n- [9puz: 1666 Amsterdam Prologue walkthrough](https://9puz.com/4730-1666-amsterdam-prologue-walkthrough/) - `wiki/reference` - checked `2026-09-01` - Chapter-one Prologue milestone order referenced in the chapters roadmap context",
     },
   ],
   faqIds: ["chap-first", "chap-ea-length", "chap-ea-window", "chap-boroughs", "chap-total"],
   relatedPageIds: [
     "fixed-early-access-faq-en-us",
     "fixed-story-setting-en-us",
+    "fixed-prologue-demo-en-us",
   ],
   schemaTypes: ["Article", "FAQPage", "BreadcrumbList"],
   sourceStatus: "official",
