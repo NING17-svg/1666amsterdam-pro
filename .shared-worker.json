@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "site_id": "1666amsterdam-pro",
+  "worker": "1webswingescape-wiki",
+  "domain": "1666amsterdam.pro",
+  "repository": "NING17-svg/1666amsterdam-pro",
+  "deployment_repository": "NING17-svg/game-guide-pool-03",
+  "marker_path": "/__deployment.json",
+  "pool_id": "guide-pool-03"
+}

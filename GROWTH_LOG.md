@@ -48,3 +48,7 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Files changed: `src/data/pages/fixed-pages.ts` (prologueDemoPage, aaronCompanionPage, storySettingPage, multiBoroughChaptersPage), `src/data/faq.ts`, `CONTENT_INDEX.md`.
 - URLs affected: `/prologue-demo`, `/aaron-companion`, `/story-setting`, `/chapters`. No existing URL was removed or redirected.
 - 4 new FAQ entries added (`demo-bateratze`, `demo-walkthrough`, `demo-library`, `demo-hotel-items`), sourced to the 9puz Prologue walkthrough and the Sportskeeda Prologue walkthrough.
+
+## 2026-10-01 — shared Worker deployment maintenance
+
+User-authorized routing migration to `guide-pool-03` / Worker `1webswingescape-wiki`; source push is connected to the shared Cloudflare Git build via the repository deploy hook. Content and public URL identities are unchanged. Completion is tracked by the central group migration report and live source/version verification.
